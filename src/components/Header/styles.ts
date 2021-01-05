@@ -1,10 +1,7 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
-  height: 750px;
   width: 100%;
-  display: flex;
-  justify-content: space-between;
   position: relative;
   margin-bottom: 3rem;
   background: #2bcfa2;
@@ -35,8 +32,7 @@ export const HeaderContainer = styled.header`
   }
 
   li.menu-item a {
-    font-weight: bold;
-    font-family: Open Sans, serif;
+    font: 600 18px Open Sans, sans-serif;
     color: #ffffff;
     text-decoration: none;
   }
@@ -53,4 +49,102 @@ export const HeaderContainer = styled.header`
   }
 `;
 
-export const Content = styled.div``;
+export const Content = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .image-left,
+  .main-right {
+    display: inline-block;
+  }
+
+  .image-left img {
+    width: 500px;
+  }
+
+  main h1 {
+    font-size: 50px;
+    font-family: Open Sans, serif;
+  }
+
+  .main-p p {
+    max-width: 750px;
+  }
+
+  .main-p p {
+    margin-top: 20px;
+    font-size: 20px;
+    font-family: Open Sans, serif;
+  }
+
+  .main-cards {
+    margin-top: 20px;
+  }
+
+  .card {
+    width: 277px;
+    height: 433px;
+    background: #ffffff 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 6px #00000029;
+    border-radius: 10px;
+    opacity: 1;
+    display: inline-block;
+    margin-right: 10px;
+  }
+
+  .card h2 {
+    font: 600 29px Open Sans, sans-serif;
+    color: #00a35e;
+    text-align: left;
+    padding: 10px 20px;
+  }
+
+  .card p {
+    font-size: 18px;
+    color: #df3558;
+    padding: 10px 20px;
+  }
+
+  .card img {
+    width: 114px;
+    height: 114px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .card-ul-left {
+    padding: 10px 20px;
+  }
+
+  .card-li {
+    font-size: 14px;
+    list-style-type: none;
+    color: #2c3834;
+    padding: 5px 10px;
+  }
+
+  .card-ul-left,
+  .card-ul-right {
+    display: inline-block;
+  }
+
+  .card-ul-right {
+    padding: 10px 0;
+  }
+
+  .card-button {
+    position: relative;
+    width: 124px;
+    height: 46px;
+    color: #2c3834;
+    background-color: #00ea87;
+    border-radius: 10px;
+    border-color: #00ea87;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    bottom: -20px;
+  }
+`;

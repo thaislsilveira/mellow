@@ -14,7 +14,7 @@ body {
 }
 
 body, input, button {
-  font-family: Nunito, serif;
+  font-family: Open Sans, serif;
   font-size: 16px;
 }
 
