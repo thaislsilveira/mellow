@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { shade } from 'polished';
 
 export const Container = styled.div`
   width: 100%;
@@ -146,5 +147,9 @@ export const Content = styled.div`
     margin-right: auto;
     bottom: -20px;
     border: none;
+
+    &:hover {
+      background-color: ${shade(0.2, '#00ea87')};
+    }
   }
 `;

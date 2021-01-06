@@ -54,13 +54,13 @@ const Carousel: React.FC = () => {
           </p>
           <div className="logos">
             <div className="logo">
-              <img src={Ocado} alt="effect" />
+              <img src={Wtr} alt="effect" />
             </div>
             <div className="logo">
               <img src={Tesco} alt="effect" />
             </div>
             <div className="logo">
-              <img src={Wtr} alt="effect" />
+              <img src={Ocado} alt="effect" />
             </div>
           </div>
         </div>
