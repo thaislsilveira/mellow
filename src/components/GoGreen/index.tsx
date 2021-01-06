@@ -5,6 +5,8 @@ import { Container } from './styles';
 import Landpage from '../../assets/Landpage.png';
 import Effect from '../../assets/Grupo-1864.svg';
 
+import Carousel from './Carousel';
+
 const GoGreen: React.FC = () => {
   return (
     <>
@@ -17,6 +19,7 @@ const GoGreen: React.FC = () => {
             <img src={Landpage} alt="" />
           </div>
         </div>
+        <Carousel />
       </Container>
     </>
   );

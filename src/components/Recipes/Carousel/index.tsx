@@ -4,10 +4,10 @@ import Slick from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 
-import image1 from '../../assets/10.png';
-import image2 from '../../assets/fod-112.png';
-import image3 from '../../assets/food-086.png';
-import image4 from '../../assets/food-114.png';
+import image1 from '../../../assets/10.png';
+import image2 from '../../../assets/fod-112.png';
+import image3 from '../../../assets/food-086.png';
+import image4 from '../../../assets/food-114.png';
 
 import { Container } from './styles';
 

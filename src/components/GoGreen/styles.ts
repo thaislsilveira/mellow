@@ -1,8 +1,11 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
+  display: flex;
   margin-top: 50px;
   background: #f9f9f9;
+  align-items: center;
+  justify-content: center;
 
   .images {
     position: relative;
