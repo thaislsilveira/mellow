@@ -1,4 +1,5 @@
 import React from 'react';
+import GoGreen from '../../components/GoGreen';
 import Header from '../../components/Header';
 import Recipes from '../../components/Recipes';
 
@@ -9,6 +10,7 @@ const Dashboard: React.FC = () => {
     <Container>
       <Header />
       <Recipes />
+      <GoGreen />
     </Container>
   );
 };
