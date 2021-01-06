@@ -141,10 +141,10 @@ export const Content = styled.div`
     color: #2c3834;
     background-color: #00ea87;
     border-radius: 10px;
-    border-color: #00ea87;
     display: block;
     margin-left: auto;
     margin-right: auto;
     bottom: -20px;
+    border: none;
   }
 `;
