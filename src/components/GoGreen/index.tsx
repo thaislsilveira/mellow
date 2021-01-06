@@ -9,11 +9,13 @@ const GoGreen: React.FC = () => {
   return (
     <>
       <Container>
-        <div className="effect">
-          <img src={Effect} alt="effect" />
-        </div>
-        <div className="landpage">
-          <img src={Landpage} alt="" />
+        <div className="images">
+          <div className="effect">
+            <img src={Effect} alt="effect" />
+          </div>
+          <div className="landpage">
+            <img src={Landpage} alt="" />
+          </div>
         </div>
       </Container>
     </>
