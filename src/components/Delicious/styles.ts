@@ -2,6 +2,7 @@ import styled from 'styled-components';
 import { shade } from 'polished';
 
 export const Container = styled.div`
+  margin-bottom: 30px;
   display: flex;
   align-items: center;
   justify-content: center;
