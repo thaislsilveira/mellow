@@ -1,4 +1,5 @@
 import React from 'react';
+import Delicious from '../../components/Delicious';
 
 import GoGreen from '../../components/GoGreen';
 import Header from '../../components/Header';
@@ -14,6 +15,7 @@ const Dashboard: React.FC = () => {
       <Recipes />
       <GoGreen />
       <HowItWorks />
+      <Delicious />
     </Container>
   );
 };
