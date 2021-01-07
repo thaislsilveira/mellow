@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
+  padding: 60px 0;
   overflow: hidden;
   .div-carousel {
     display: flex;
@@ -23,9 +24,13 @@ export const Container = styled.div`
     display: inline-block;
   }
 
-  .image-carousel img {
-    padding: 100px;
-    height: 759px;
-    width: 594px;
+  .image-carousel {
+    padding: 60px;
+    img {
+      width: 100%;
+      max-width: 460px;
+
+      border-radius: 10px;
+    }
   }
 `;

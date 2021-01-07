@@ -36,15 +36,21 @@ const Carousel: React.FC = () => {
 
   return (
     <Container>
-      <Slick infinite centerMode slidesToShow={1} responsive={responsive}>
+      <Slick
+        infinite
+        centerMode
+        arrows={false}
+        slidesToShow={1}
+        responsive={responsive}
+      >
         <div>
           <div className="div-carousel">
             <div className="image-carousel">
               <img src={Green} alt=" " />
             </div>
             <div className="text-carousel">
+              <h1>How it works</h1>
               <p>
-                <h1>How it works</h1>
                 Culpa qui officia deserunt mollit anim id est laborum. Sed ut
                 perspiciatis unde omnis iste natus error sit voluptartem
                 accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
