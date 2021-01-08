@@ -1,3 +1,4 @@
+import { shade } from 'polished';
 import styled from 'styled-components';
 
 export const Container = styled.div`
@@ -7,7 +8,7 @@ export const Container = styled.div`
     nav {
       display: flex;
       justify-content: space-between;
-      padding-top: 40px;
+      padding-top: 113px;
     }
     ul {
       padding-left: 160px;
@@ -72,6 +73,10 @@ export const Container = styled.div`
       border-radius: 0px 10px 10px 0px;
       opacity: 1;
       border: none;
+
+      &:hover {
+        background-color: ${shade(0.2, '#00ea87')};
+      }
     }
 
     .social-network {

@@ -39,6 +39,7 @@ const Carousel: React.FC = () => {
   return (
     <Container>
       <Slick
+        arrows
         autoplay
         infinite
         centerMode

@@ -9,23 +9,23 @@ export const Container = styled.div`
 
   .images {
     position: relative;
-  }
 
-  .effect,
-  .landpage {
-    display: inline-block;
-  }
+    .effect,
+    .landpage {
+      display: inline-block;
+    }
 
-  .effect img {
-    margin-left: 90px;
-    position: absolute;
-    bottom: 360px;
-    width: 250px;
-  }
+    .effect img {
+      margin-left: 90px;
+      position: absolute;
+      bottom: 360px;
+      width: 250px;
+    }
 
-  .landpage img {
-    width: 620px;
-    margin-left: 90px;
-    padding-right: 160px;
+    .landpage img {
+      width: 620px;
+      margin-left: 90px;
+      padding-right: 160px;
+    }
   }
 `;
