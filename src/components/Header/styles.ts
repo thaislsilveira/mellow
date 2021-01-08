@@ -67,89 +67,99 @@ export const HeaderContainer = styled.header`
   }
 
   @media (max-width: 1100px) {
-    .menu-responsivo {
-      label {
-        width: 30px;
-        height: 22px;
-        display: block;
-        position: relative;
-        margin-right: 40px;
-
-        cursor: pointer;
+    nav {
+      position: relative;
+      flex-direction: column;
+      > a {
+        margin-right: auto;
       }
-
-      label span {
+      .menu-responsivo {
         width: 100%;
-        height: 5px;
-        display: block;
-        position: absolute;
-        transition: 0.25s ease-in-out;
+        margin-right: 0;
+        label {
+          width: 30px;
+          height: 22px;
+          display: block;
+          position: absolute;
+          right: 40px;
+          top: 40px;
 
-        background: #ffffff;
-        border-radius: 30px;
-      }
+          cursor: pointer;
+        }
 
-      label span:nth-child(1) {
-        top: 0;
-      }
+        label span {
+          width: 100%;
+          height: 5px;
+          display: block;
+          position: absolute;
+          transition: 0.25s ease-in-out;
 
-      label span:nth-child(2) {
-        top: 8px;
-      }
+          background: #ffffff;
+          border-radius: 30px;
+        }
 
-      label span:nth-child(3) {
-        top: 16px;
-      }
+        label span:nth-child(1) {
+          top: 0;
+        }
 
-      #menu-checkbox {
-        display: block;
-        z-index: 2;
-        position: absolute;
-        opacity: 0;
-      }
+        label span:nth-child(2) {
+          top: 8px;
+        }
 
-      #menu-checkbox:checked + label span:nth-child(1) {
-        top: 8px;
-        transform: rotate(-45deg);
-      }
+        label span:nth-child(3) {
+          top: 16px;
+        }
 
-      #menu-checkbox:checked + label span:nth-child(2) {
-        opacity: 0;
-      }
+        #menu-checkbox {
+          display: block;
+          z-index: 2;
+          position: absolute;
+          opacity: 0;
+        }
 
-      #menu-checkbox:checked + label span:nth-child(3) {
-        top: 8px;
-        transform: rotate(45deg);
-      }
+        #menu-checkbox:checked + label span:nth-child(1) {
+          top: 8px;
+          transform: rotate(-45deg);
+        }
 
-      ul {
-        min-width: 0;
-        width: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        position: absolute;
-        left: 0;
-        top: 70px;
-        list-style: none;
-        padding: 10px 0;
+        #menu-checkbox:checked + label span:nth-child(2) {
+          opacity: 0;
+        }
 
-        transform: translateY(-9rem);
-        transition: 0.2s ease-in-out;
-        z-index: 1;
-        background: #00ea87;
+        #menu-checkbox:checked + label span:nth-child(3) {
+          top: 8px;
+          transform: rotate(45deg);
+        }
 
-        opacity: 0;
-      }
+        ul {
+          min-width: 0;
+          width: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          left: 0;
+          top: 70px;
+          list-style: none;
 
-      #menu-checkbox:checked ~ ul {
-        transform: translateY(0);
-        opacity: 1;
-      }
+          transition: 0.2s ease-in-out;
+          z-index: 1;
+          background: #00ea87;
+          overflow: hidden;
+          max-height: 0;
+        }
 
-      li {
-        margin-left: 0;
-        margin-right: 32px;
+        #menu-checkbox:checked ~ ul {
+          transform: translateY(0);
+          opacity: 1;
+          overflow: hidden;
+          max-height: 500px;
+          padding: 10px 0;
+        }
+
+        li {
+          margin-left: 0;
+          margin-right: 32px;
+        }
       }
     }
   }
@@ -277,8 +287,6 @@ export const Content = styled.div`
   @media (max-width: 1100px) {
     .main-right {
       main {
-        padding-top: 90px;
-
         h1,
         .main-p p {
           text-align: center;
