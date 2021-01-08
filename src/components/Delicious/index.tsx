@@ -16,7 +16,7 @@ const Delicious: React.FC = () => {
     className: 'div-cion',
   });
   return (
-    <Container>
+    <Container id="princing">
       <div className="content-left">
         <div className="content-top">
           <h1>Delicious</h1>

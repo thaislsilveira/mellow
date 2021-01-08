@@ -6,7 +6,7 @@ import { Container } from './styles';
 
 const HowItWorks: React.FC = () => {
   return (
-    <Container>
+    <Container id="how-it-works">
       <Carousel />
     </Container>
   );

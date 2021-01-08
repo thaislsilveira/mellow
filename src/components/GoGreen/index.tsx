@@ -10,7 +10,7 @@ import Carousel from './Carousel';
 const GoGreen: React.FC = () => {
   return (
     <>
-      <Container>
+      <Container id="go-green">
         <div className="images">
           <div className="effect">
             <img src={Effect} alt="effect" />

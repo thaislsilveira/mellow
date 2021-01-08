@@ -6,7 +6,7 @@ import { Container, Content } from './styles';
 const Recipes: React.FC = () => {
   return (
     <>
-      <Container>
+      <Container id="recipes">
         <Content>
           <h1>Recipes</h1>
           <div className="content-p">

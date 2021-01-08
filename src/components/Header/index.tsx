@@ -1,7 +1,6 @@
 import React from 'react';
 
-import { Link } from 'react-router-dom';
-
+import { Link, animateScroll as scroll } from 'react-scroll';
 import { Container, HeaderContainer, Content } from './styles';
 
 import logoImg from '../../assets/Mellow_Logo.svg';
@@ -16,21 +15,54 @@ const Header: React.FC = () => {
     <Container>
       <HeaderContainer>
         <nav>
-          <Link to="/">
+          <Link activeClass="active" to="/" spy smooth duration={500}>
             <img src={logoImg} alt="Mellow" />
           </Link>
           <ul className="menu">
             <li className="menu-item">
-              <Link to="/recipes">Recipes</Link>
+              <Link
+                activeClass="active"
+                to="recipes"
+                spy
+                smooth
+                offset={-20}
+                duration={500}
+              >
+                Recipes
+              </Link>
             </li>
             <li className="menu-item">
-              <Link to="/go-green">Go Green</Link>
+              <Link
+                activeClass="active"
+                to="go-green"
+                spy
+                smooth
+                duration={500}
+              >
+                Go Green
+              </Link>
             </li>
             <li className="menu-item">
-              <Link to="/princing">Princing</Link>
+              <Link
+                activeClass="active"
+                to="princing"
+                spy
+                smooth
+                duration={500}
+              >
+                Princing
+              </Link>
             </li>
             <li className="menu-item">
-              <Link to="/how-it-works">How it works</Link>
+              <Link
+                activeClass="active"
+                to="how-it-works"
+                spy
+                smooth
+                duration={500}
+              >
+                How it works
+              </Link>
             </li>
             <li className="menu-item">
               <img src={perfilImg} alt="Perfil" />

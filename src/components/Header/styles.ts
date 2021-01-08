@@ -36,6 +36,7 @@ export const HeaderContainer = styled.header`
     font: 600 18px Open Sans, sans-serif;
     color: #ffffff;
     text-decoration: none;
+    cursor: pointer;
   }
 
   li img {
