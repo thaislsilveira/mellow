@@ -65,4 +65,12 @@ export const Container = styled.div`
       height: 500px !important;
     }
   }
+
+  @media (max-width: 1546px) {
+    padding: 60px;
+  }
+
+  @media (max-width: 1100px) {
+    flex-direction: column;
+  }
 `;

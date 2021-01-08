@@ -25,4 +25,10 @@ export const Content = styled.div`
     font-size: 20px;
     text-align: center;
   }
+
+  @media (max-width: 1100px) {
+    .content-p {
+      padding: 10px;
+    }
+  }
 `;

@@ -10,39 +10,9 @@ import Red from '../../../assets/red.jpg';
 import { Container } from './styles';
 
 const Carousel: React.FC = () => {
-  const responsive = [
-    {
-      breakpoint: 1024,
-      settings: {
-        slidesToShow: 2,
-        slidesToScroll: 2,
-      },
-    },
-    {
-      breakpoint: 600,
-      settings: {
-        slidesToShow: 2,
-        slidesToScroll: 2,
-      },
-    },
-    {
-      breakpoint: 480,
-      settings: {
-        slidesToShow: 1,
-        slidesToScroll: 1,
-      },
-    },
-  ];
-
   return (
     <Container>
-      <Slick
-        infinite
-        centerMode
-        arrows={false}
-        slidesToShow={1}
-        responsive={responsive}
-      >
+      <Slick infinite centerMode arrows={false} slidesToShow={1}>
         <div>
           <div className="div-carousel">
             <div className="image-carousel">

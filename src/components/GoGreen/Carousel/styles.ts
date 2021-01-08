@@ -24,4 +24,14 @@ export const Container = styled.div`
       display: inline-block;
     }
   }
+
+  @media (max-width: 1100px) {
+    padding: 40px;
+  }
+
+  @media (max-width: 802px) {
+    .div-carousel {
+      padding: 10px;
+    }
+  }
 `;

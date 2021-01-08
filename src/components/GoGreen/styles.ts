@@ -28,4 +28,16 @@ export const Container = styled.div`
       padding-right: 160px;
     }
   }
+
+  @media (min-width: 481px) and (max-width: 1100px) {
+    .images {
+      display: none;
+    }
+  }
+
+  @media (min-width: 320px) and (max-width: 480px) {
+    .images {
+      display: none;
+    }
+  }
 `;

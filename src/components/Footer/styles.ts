@@ -92,4 +92,34 @@ export const Container = styled.div`
       }
     }
   }
+
+  @media (max-width: 1100px) {
+    .footer-header {
+      nav {
+        padding-top: 50px;
+        flex-direction: column;
+
+        ul {
+          padding-left: 0;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+
+        .logo-item {
+          order: -1;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          padding-right: 0;
+          padding-bottom: 20px;
+        }
+      }
+    }
+
+    .footer-content {
+      padding-left: 0;
+      text-align: center;
+    }
+  }
 `;

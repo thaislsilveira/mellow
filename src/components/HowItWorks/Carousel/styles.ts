@@ -34,4 +34,14 @@ export const Container = styled.div`
       max-width: 639px;
     }
   }
+
+  @media (max-width: 762px) {
+    .div-carousel {
+      display: block;
+
+      .text-carousel {
+        padding: 0 20px 0 20px;
+      }
+    }
+  }
 `;
