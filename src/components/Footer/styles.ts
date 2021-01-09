@@ -123,4 +123,35 @@ export const Container = styled.div`
       text-align: center;
     }
   }
+
+  @media (max-width: 470px) {
+    .footer-header {
+      ul {
+        flex-direction: column;
+        li {
+          margin-bottom: 10px;
+        }
+      }
+    }
+
+    .footer-content {
+      input {
+        border-radius: 10px;
+      }
+
+      button {
+        margin-top: 5px;
+        border-radius: 10px;
+      }
+    }
+  }
+
+  @media (max-width: 364px) {
+    .footer-content {
+      h1 {
+        padding-left: 10px;
+        padding-right: 10px;
+      }
+    }
+  }
 `;

@@ -73,4 +73,37 @@ export const Container = styled.div`
   @media (max-width: 1100px) {
     flex-direction: column;
   }
+
+  @media (max-width: 364px) {
+    .content-left {
+      margin-top: 0;
+
+      h1 {
+        font-size: 60px;
+      }
+      h1,
+      p {
+        text-align: center;
+      }
+
+      button {
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+      }
+
+      .content-bottom-image {
+        display: block;
+        text-align: center;
+      }
+
+
+
+      }
+    }
+
+    .content-top {
+      margin-right: 0;
+    }
+  }
 `;

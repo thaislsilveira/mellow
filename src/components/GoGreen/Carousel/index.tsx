@@ -11,9 +11,23 @@ import Wtr from '../../../assets/wtr-logo.svg';
 import { Container } from './styles';
 
 const Carousel: React.FC = () => {
+  const responsive = [
+    {
+      breakpoint: 952,
+      settings: {
+        centerMode: false,
+      },
+    },
+  ];
   return (
     <Container>
-      <Slick infinite centerMode slidesToShow={1}>
+      <Slick
+        arrows={false}
+        infinite
+        centerMode
+        responsive={responsive}
+        slidesToShow={1}
+      >
         <div className="div-carousel">
           <h1>Go Green</h1>
           <p>
