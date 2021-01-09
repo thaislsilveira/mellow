@@ -12,6 +12,29 @@ import twitterImg from '../../assets/icon-twitter.svg';
 import { Container } from './styles';
 
 const Footer: React.FC = () => {
+  const arraySocial = [
+    {
+      link: 'https://www.facebook.com/',
+      img: facebookImg,
+      alt: 'Facebook Logo',
+    },
+    {
+      link: 'https://twitter.com/',
+      img: twitterImg,
+      alt: 'Twitter Logo',
+    },
+    {
+      link: 'https://www.instagram.com/',
+      img: instagramImg,
+      alt: 'Instagram Logo',
+    },
+    {
+      link: 'https://pinterest.com/',
+      img: pinterestImg,
+      alt: 'Pinterest Logo',
+    },
+  ];
+
   return (
     <Container>
       <div className="footer-header">
@@ -69,26 +92,15 @@ const Footer: React.FC = () => {
           <button type="button">SUBSCRIBE</button>
         </div>
         <div className="social-network">
-          <div className="social">
-            <LinkSocial to="https://www.facebook.com/">
-              <img src={facebookImg} alt="Facebook Logo" />
-            </LinkSocial>
-          </div>
-          <div className="social">
-            <LinkSocial to="https://twitter.com/">
-              <img src={twitterImg} alt="Twitter Logo" />
-            </LinkSocial>
-          </div>
-          <div className="social">
-            <LinkSocial to="https://www.instagram.com/">
-              <img src={instagramImg} alt="Instagram Logo" />
-            </LinkSocial>
-          </div>
-          <div className="social">
-            <LinkSocial to="https://pinterest.com/">
-              <img src={pinterestImg} alt="Pinterest Logo" />
-            </LinkSocial>
-          </div>
+          {arraySocial.map(item => {
+            return (
+              <div className="social">
+                <LinkSocial to={`${item.link}`}>
+                  <img src={`${item.img}`} alt={`${item.alt}`} />
+                </LinkSocial>
+              </div>
+            );
+          })}
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing</p>
         </div>
       </div>

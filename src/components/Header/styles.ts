@@ -282,6 +282,8 @@ export const Content = styled.div`
     }
 
     button {
+      font-weight: 600;
+      font-size: 14px;
       position: relative;
       width: 124px;
       height: 46px;

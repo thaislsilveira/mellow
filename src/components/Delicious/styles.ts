@@ -25,6 +25,8 @@ export const Container = styled.div`
     }
 
     button {
+      font-weight: 600;
+      font-size: 14px;
       width: 124px;
       height: 46px;
       color: #2c3834;

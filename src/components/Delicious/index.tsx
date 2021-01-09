@@ -12,6 +12,19 @@ import googlePlayImg from '../../assets/google-play.png';
 import appStoreImg from '../../assets/app-store-badge.png';
 
 const Delicious: React.FC = () => {
+  const arrayInformation = [
+    {
+      link: 'https://www.apple.com/br/app-store/',
+      img: appStoreImg,
+      alt: 'App Store',
+    },
+    {
+      link: 'https://play.google.com/store?hl=pt_BR&gl=US',
+      img: googlePlayImg,
+      alt: 'Google Play',
+    },
+  ];
+
   const iconPoint = new L.Icon({
     iconUrl: pointImg,
     iconRetinaUrl: pointImg,
@@ -34,16 +47,15 @@ const Delicious: React.FC = () => {
         <div className="content-bottom">
           <p>Download on iOS and android for free</p>
           <div className="content-bottom-images">
-            <div className="content-bottom-image">
-              <Link to="https://www.apple.com/br/app-store/">
-                <img src={appStoreImg} alt="App Store" />
-              </Link>
-            </div>
-            <div className="content-bottom-image">
-              <Link to="https://play.google.com/store?hl=pt_BR&gl=US">
-                <img src={googlePlayImg} alt="Google Play" />
-              </Link>
-            </div>
+            {arrayInformation.map(item => {
+              return (
+                <div className="content-bottom-image">
+                  <Link to={`${item.link}`}>
+                    <img src={`${item.img}`} alt={`${item.alt}`} />
+                  </Link>
+                </div>
+              );
+            })}
           </div>
         </div>
       </div>

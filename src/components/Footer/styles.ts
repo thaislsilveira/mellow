@@ -68,6 +68,8 @@ export const Container = styled.div`
     }
 
     input {
+      opacity: 1;
+      font-size: 14px;
       padding: 10px;
       color: #7b7b7b;
       width: 330px;
@@ -79,6 +81,8 @@ export const Container = styled.div`
     }
 
     button {
+      font-weight: 600;
+      font-size: 14px;
       width: 136px;
       padding: 5px;
       margin-left: 5px;

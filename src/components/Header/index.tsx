@@ -12,6 +12,8 @@ import avocadoImg from '../../assets/avocado.svg';
 import bowlImg from '../../assets/bowl.svg';
 
 const Header: React.FC = () => {
+  const arrayImage = [panImg, avocadoImg, bowlImg];
+
   return (
     <Container id="nav">
       <HeaderContainer>
@@ -95,72 +97,32 @@ const Header: React.FC = () => {
               </p>
             </div>
             <div className="main-cards">
-              <div className="card">
-                <h2>Plan 01</h2>
-                <p>7 Days trial</p>
-                <img src={panImg} alt="Pan" />
-                <ul className="card-ul-left">
-                  <li className="card-li">Users</li>
-                  <li className="card-li">Save Recipes </li>
-                  <li className="card-li">Manage Purchase</li>
-                  <li className="card-li">Compare Price</li>
-                  <li className="card-li">New recipes every week</li>
-                </ul>
-                <ul className="card-ul-right">
-                  <li className="card-li">-</li>
-                  <li className="card-li">-</li>
-                  <li className="card-li">-</li>
-                  <li className="card-li">-</li>
-                  <li className="card-li">-</li>
-                </ul>
-                <button type="button" className="card-button">
-                  LET’S TRY
-                </button>
-              </div>
-              <div className="card">
-                <h2>Plan 01</h2>
-                <p>7 Days trial</p>
-                <img src={avocadoImg} alt="Avocado" />
-                <ul className="card-ul-left">
-                  <li className="card-li">Users</li>
-                  <li className="card-li">Save Recipes </li>
-                  <li className="card-li">Manage Purchase</li>
-                  <li className="card-li">Compare Price</li>
-                  <li className="card-li">New recipes every week</li>
-                </ul>
-                <ul className="card-ul-right">
-                  <li className="card-li">-</li>
-                  <li className="card-li">-</li>
-                  <li className="card-li">-</li>
-                  <li className="card-li">-</li>
-                  <li className="card-li">-</li>
-                </ul>
-                <button type="button" className="card-button">
-                  LET’S TRY
-                </button>
-              </div>
-              <div className="card">
-                <h2>Plan 01</h2>
-                <p>7 Days trial</p>
-                <img src={bowlImg} alt="Bowl" />
-                <ul className="card-ul-left">
-                  <li className="card-li">Users</li>
-                  <li className="card-li">Save Recipes </li>
-                  <li className="card-li">Manage Purchase</li>
-                  <li className="card-li">Compare Price</li>
-                  <li className="card-li">New recipes every week</li>
-                </ul>
-                <ul className="card-ul-right">
-                  <li className="card-li">-</li>
-                  <li className="card-li">-</li>
-                  <li className="card-li">-</li>
-                  <li className="card-li">-</li>
-                  <li className="card-li">-</li>
-                </ul>
-                <button type="button" className="card-button">
-                  LET’S TRY
-                </button>
-              </div>
+              {arrayImage.map(image => {
+                return (
+                  <div className="card">
+                    <h2>Plan 01</h2>
+                    <p>7 Days trial</p>
+                    <img src={image} alt="Pan" />
+                    <ul className="card-ul-left">
+                      <li className="card-li">Users</li>
+                      <li className="card-li">Save Recipes </li>
+                      <li className="card-li">Manage Purchase</li>
+                      <li className="card-li">Compare Price</li>
+                      <li className="card-li">New recipes every week</li>
+                    </ul>
+                    <ul className="card-ul-right">
+                      <li className="card-li">-</li>
+                      <li className="card-li">-</li>
+                      <li className="card-li">-</li>
+                      <li className="card-li">-</li>
+                      <li className="card-li">-</li>
+                    </ul>
+                    <button type="button" className="card-button">
+                      LET’S TRY
+                    </button>
+                  </div>
+                );
+              })}
             </div>
           </main>
         </div>

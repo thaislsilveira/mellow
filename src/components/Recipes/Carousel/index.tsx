@@ -1,12 +1,9 @@
-import * as React from 'react';
+import React, { useState } from 'react';
 
 import Slick from 'react-slick';
-import Zoom from 'react-medium-image-zoom';
 
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
-
-import 'react-medium-image-zoom/dist/styles.css';
 
 import japaneseFoodImg from '../../../assets/japanese-food.png';
 import pastaImg from '../../../assets/pasta.png';
@@ -16,26 +13,20 @@ import riceAndSaladImg from '../../../assets/rice-and-salad.png';
 import { Container } from './styles';
 
 const Carousel: React.FC = () => {
+  const arrayImage = [
+    japaneseFoodImg,
+    pastaImg,
+    breadAndAvocadoImg,
+    riceAndSaladImg,
+    japaneseFoodImg,
+    breadAndAvocadoImg,
+  ];
+
   const responsive = [
     {
-      breakpoint: 1024,
+      breakpoint: 952,
       settings: {
-        slidesToShow: 3,
-        slidesToScroll: 3,
-      },
-    },
-    {
-      breakpoint: 600,
-      settings: {
-        slidesToShow: 2,
-        slidesToScroll: 2,
-      },
-    },
-    {
-      breakpoint: 480,
-      settings: {
-        slidesToShow: 1,
-        slidesToScroll: 1,
+        centerMode: false,
       },
     },
   ];
@@ -43,48 +34,42 @@ const Carousel: React.FC = () => {
   return (
     <Container>
       <Slick
-        arrows
+        arrows={false}
+        dots={false}
         autoplay
         infinite
         centerMode
-        slidesToShow={5}
+        variableWidth
+        slidesToShow={1}
         responsive={responsive}
       >
-        <div className="div-carousel">
-          <Zoom zoomMargin={200}>
-            <img src={breadAndAvocadoImg} alt="Bread and Avocado" />
-          </Zoom>
-        </div>
-        <div className="div-carousel">
-          <Zoom zoomMargin={200}>
-            <img src={pastaImg} alt="Pasta" />
-          </Zoom>
-        </div>
-        <div className="div-carousel">
-          <Zoom zoomMargin={200}>
-            <img src={riceAndSaladImg} alt="Rice and Salad" />
-          </Zoom>
-        </div>
-        <div className="div-carousel">
-          <Zoom zoomMargin={200}>
-            <img src={japaneseFoodImg} alt="Japanese Food" />
-          </Zoom>
-        </div>
-        <div className="div-carousel">
-          <Zoom zoomMargin={200}>
-            <img src={riceAndSaladImg} alt="Rice and Salad" />
-          </Zoom>
-        </div>
-        <div className="div-carousel">
-          <Zoom zoomMargin={200}>
-            <img src={pastaImg} alt="Pasta" />
-          </Zoom>
-        </div>
-        <div className="div-carousel">
-          <Zoom zoomMargin={200}>
-            <img src={japaneseFoodImg} alt="Japanese Food" />
-          </Zoom>
-        </div>
+        {arrayImage.map(image => {
+          return (
+            <div className="div-carousel-block">
+              <div className="div-carousel">
+                <div className="div-carousel-inner">
+                  <div className="div-carousel-image">
+                    <div
+                      className="img-carousel"
+                      style={{ backgroundImage: `url(${image})` }}
+                    />
+                  </div>
+                  <div className="div-carousel-text">
+                    <h1>Recipe Name Goes Here</h1>
+                    <p>
+                      Culpa qui officia deserunt mollit anim id est laborum. Sed
+                      ut perspiciatis unde omnis iste natus error sit
+                      voluptartem accusantium doloremque laudantium
+                    </p>
+                    <button type="button" className="div-carouse-button">
+                      GO TO RECIPE
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          );
+        })}
       </Slick>
     </Container>
   );
