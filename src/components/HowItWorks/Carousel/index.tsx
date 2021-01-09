@@ -12,7 +12,7 @@ import { Container } from './styles';
 const Carousel: React.FC = () => {
   return (
     <Container>
-      <Slick infinite centerMode arrows={false} slidesToShow={1}>
+      <Slick fade autoplay infinite centerMode arrows={false} slidesToShow={1}>
         <div>
           <div className="div-carousel">
             <div className="image-carousel">

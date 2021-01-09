@@ -29,13 +29,9 @@ export const Container = styled.div`
     }
   }
 
-  @media (min-width: 481px) and (max-width: 1100px) {
-    .images {
-      display: none;
-    }
-  }
+  @media (max-width: 1420px) {
+    padding: 40px;
 
-  @media (min-width: 320px) and (max-width: 480px) {
     .images {
       display: none;
     }

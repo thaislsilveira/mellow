@@ -13,6 +13,15 @@ export const Container = styled.div`
 `;
 
 export const HeaderContainer = styled.header`
+  position: fixed;
+  width: 100%;
+  z-index: 2000;
+  -moz-transition: all 0.5s ease;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  top: 0;
+  background: #2bcfa2;
+
   nav {
     display: flex;
     justify-content: space-between;

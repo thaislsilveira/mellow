@@ -12,10 +12,10 @@ import mealImg from '../../assets/Grupo-1832.svg';
 
 const Header: React.FC = () => {
   return (
-    <Container>
+    <Container id="nav">
       <HeaderContainer>
         <nav>
-          <Link activeClass="active" to="/" spy smooth duration={500}>
+          <Link activeClass="active" to="nav" spy smooth duration={500}>
             <img src={logoImg} alt="Mellow" />
           </Link>
           <div className="menu-responsivo">
@@ -32,7 +32,7 @@ const Header: React.FC = () => {
                   to="recipes"
                   spy
                   smooth
-                  offset={-20}
+                  offset={-90}
                   duration={500}
                 >
                   Recipes
@@ -55,6 +55,7 @@ const Header: React.FC = () => {
                   to="princing"
                   spy
                   smooth
+                  offset={-90}
                   duration={500}
                 >
                   Princing
