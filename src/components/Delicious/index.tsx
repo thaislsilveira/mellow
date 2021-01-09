@@ -7,14 +7,14 @@ import { Map, TileLayer, Marker } from 'react-leaflet';
 
 import { Container } from './styles';
 
-import point from '../../assets/marker.png';
-import google from '../../assets/google-play.png';
-import appStore from '../../assets/app-store-badge.png';
+import pointImg from '../../assets/marker.png';
+import googlePlayImg from '../../assets/google-play.png';
+import appStoreImg from '../../assets/app-store-badge.png';
 
 const Delicious: React.FC = () => {
   const iconPoint = new L.Icon({
-    iconUrl: point,
-    iconRetinaUrl: point,
+    iconUrl: pointImg,
+    iconRetinaUrl: pointImg,
     className: 'div-cion',
   });
   return (
@@ -36,12 +36,12 @@ const Delicious: React.FC = () => {
           <div className="content-bottom-images">
             <div className="content-bottom-image">
               <Link to="https://www.apple.com/br/app-store/">
-                <img src={appStore} alt="App Store" />
+                <img src={appStoreImg} alt="App Store" />
               </Link>
             </div>
             <div className="content-bottom-image">
               <Link to="https://play.google.com/store?hl=pt_BR&gl=US">
-                <img src={google} alt="Google store" />
+                <img src={googlePlayImg} alt="Google Play" />
               </Link>
             </div>
           </div>

@@ -1,14 +1,15 @@
 import React from 'react';
 
 import { Link, animateScroll as scroll } from 'react-scroll';
+
 import { Container, HeaderContainer, Content } from './styles';
 
-import logoImg from '../../assets/Mellow_Logo.svg';
+import logoImg from '../../assets/mellow-logo.svg';
 import perfilImg from '../../assets/Perfil.jpg';
-import headerImg from '../../assets/Photo-05.png';
-import panImg from '../../assets/Grupo-1852.svg';
-import fruitImg from '../../assets/Grupo-1844.svg';
-import mealImg from '../../assets/Grupo-1832.svg';
+import foodsImg from '../../assets/foods.png';
+import panImg from '../../assets/pan.svg';
+import avocadoImg from '../../assets/avocado.svg';
+import bowlImg from '../../assets/bowl.svg';
 
 const Header: React.FC = () => {
   return (
@@ -81,7 +82,7 @@ const Header: React.FC = () => {
       </HeaderContainer>
       <Content>
         <div className="image-left">
-          <img src={headerImg} alt="Alimentos" />
+          <img src={foodsImg} alt="foods" />
         </div>
         <div className="main-right">
           <main>
@@ -112,7 +113,6 @@ const Header: React.FC = () => {
                   <li className="card-li">-</li>
                   <li className="card-li">-</li>
                 </ul>
-
                 <button type="button" className="card-button">
                   LET’S TRY
                 </button>
@@ -120,7 +120,7 @@ const Header: React.FC = () => {
               <div className="card">
                 <h2>Plan 01</h2>
                 <p>7 Days trial</p>
-                <img src={fruitImg} alt="Pan" />
+                <img src={avocadoImg} alt="Avocado" />
                 <ul className="card-ul-left">
                   <li className="card-li">Users</li>
                   <li className="card-li">Save Recipes </li>
@@ -135,7 +135,6 @@ const Header: React.FC = () => {
                   <li className="card-li">-</li>
                   <li className="card-li">-</li>
                 </ul>
-
                 <button type="button" className="card-button">
                   LET’S TRY
                 </button>
@@ -143,7 +142,7 @@ const Header: React.FC = () => {
               <div className="card">
                 <h2>Plan 01</h2>
                 <p>7 Days trial</p>
-                <img src={mealImg} alt="Pan" />
+                <img src={bowlImg} alt="Bowl" />
                 <ul className="card-ul-left">
                   <li className="card-li">Users</li>
                   <li className="card-li">Save Recipes </li>
@@ -158,7 +157,6 @@ const Header: React.FC = () => {
                   <li className="card-li">-</li>
                   <li className="card-li">-</li>
                 </ul>
-
                 <button type="button" className="card-button">
                   LET’S TRY
                 </button>

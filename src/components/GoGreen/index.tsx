@@ -2,8 +2,8 @@ import React from 'react';
 
 import { Container } from './styles';
 
-import Landpage from '../../assets/Landpage.png';
-import Effect from '../../assets/Grupo-1864.svg';
+import effectImg from '../../assets/effect.svg';
+import bellPepperImg from '../../assets/bell-pepper.png';
 
 import Carousel from './Carousel';
 
@@ -13,10 +13,10 @@ const GoGreen: React.FC = () => {
       <Container id="go-green">
         <div className="images">
           <div className="effect">
-            <img src={Effect} alt="effect" />
+            <img src={effectImg} alt="Effects" />
           </div>
-          <div className="landpage">
-            <img src={Landpage} alt="" />
+          <div className="pepper">
+            <img src={bellPepperImg} alt="Bell Pepper" />
           </div>
         </div>
         <Carousel />

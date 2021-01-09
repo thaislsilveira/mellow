@@ -8,10 +8,10 @@ import 'slick-carousel/slick/slick-theme.css';
 
 import 'react-medium-image-zoom/dist/styles.css';
 
-import image1 from '../../../assets/10.png';
-import image2 from '../../../assets/fod-112.png';
-import image3 from '../../../assets/food-086.png';
-import image4 from '../../../assets/food-114.png';
+import japaneseFoodImg from '../../../assets/japanese-food.png';
+import pastaImg from '../../../assets/pasta.png';
+import breadAndAvocadoImg from '../../../assets/bread-and-avocado.png';
+import riceAndSaladImg from '../../../assets/rice-and-salad.png';
 
 import { Container } from './styles';
 
@@ -52,37 +52,37 @@ const Carousel: React.FC = () => {
       >
         <div className="div-carousel">
           <Zoom>
-            <img src={image3} alt="Plates" />
+            <img src={breadAndAvocadoImg} alt="Bread and Avocado" />
           </Zoom>
         </div>
         <div className="div-carousel">
           <Zoom>
-            <img src={image2} alt="Plates" />
+            <img src={pastaImg} alt="Pasta" />
           </Zoom>
         </div>
         <div className="div-carousel">
           <Zoom>
-            <img src={image4} alt="Plates" />
+            <img src={riceAndSaladImg} alt="Rice and Salad" />
           </Zoom>
         </div>
         <div className="div-carousel">
           <Zoom>
-            <img src={image1} alt="Plates" />
+            <img src={japaneseFoodImg} alt="Japanese Food" />
           </Zoom>
         </div>
         <div className="div-carousel">
           <Zoom>
-            <img src={image4} alt="Plates" />
+            <img src={riceAndSaladImg} alt="Rice and Salad" />
           </Zoom>
         </div>
         <div className="div-carousel">
           <Zoom>
-            <img src={image2} alt="Plates" />
+            <img src={pastaImg} alt="Pasta" />
           </Zoom>
         </div>
         <div className="div-carousel">
           <Zoom>
-            <img src={image1} alt="Plates" />
+            <img src={japaneseFoodImg} alt="Japanese Food" />
           </Zoom>
         </div>
       </Slick>

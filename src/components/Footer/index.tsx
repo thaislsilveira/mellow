@@ -3,11 +3,11 @@ import React from 'react';
 import { Link as LinkSocial } from 'react-router-dom';
 import { Link, animateScroll as scroll } from 'react-scroll';
 
-import logoImg from '../../assets/Mellow_Logo.svg';
-import facebook from '../../assets/facebook.svg';
-import instagram from '../../assets/instagram.svg';
-import pinterest from '../../assets/icons-pinterest.svg';
-import twitter from '../../assets/icons-twitter.svg';
+import logoImg from '../../assets/mellow-logo.svg';
+import facebookImg from '../../assets/icon-facebook.svg';
+import instagramImg from '../../assets/icon-instagram.svg';
+import pinterestImg from '../../assets/icon-pinterest.svg';
+import twitterImg from '../../assets/icon-twitter.svg';
 
 import { Container } from './styles';
 
@@ -71,22 +71,22 @@ const Footer: React.FC = () => {
         <div className="social-network">
           <div className="social">
             <LinkSocial to="https://www.facebook.com/">
-              <img src={facebook} alt="Facebook" />
+              <img src={facebookImg} alt="Facebook Logo" />
             </LinkSocial>
           </div>
           <div className="social">
             <LinkSocial to="https://twitter.com/">
-              <img src={twitter} alt="Twitter" />
+              <img src={twitterImg} alt="Twitter Logo" />
             </LinkSocial>
           </div>
           <div className="social">
             <LinkSocial to="https://www.instagram.com/">
-              <img src={instagram} alt="Instagram" />
+              <img src={instagramImg} alt="Instagram Logo" />
             </LinkSocial>
           </div>
           <div className="social">
             <LinkSocial to="https://pinterest.com/">
-              <img src={pinterest} alt="Pinterest" />
+              <img src={pinterestImg} alt="Pinterest Logo" />
             </LinkSocial>
           </div>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing</p>

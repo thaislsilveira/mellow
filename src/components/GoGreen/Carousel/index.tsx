@@ -4,9 +4,9 @@ import Slick from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 
-import Ocado from '../../../assets/ocado-seeklogo.com.svg';
-import Tesco from '../../../assets/tesco-seeklogo.com.svg';
-import Wtr from '../../../assets/wtr-logo.svg';
+import ocadoImg from '../../../assets/ocado-logo.svg';
+import tescoImg from '../../../assets/tesco-logo.svg';
+import waitrosePartnersImg from '../../../assets/waitrose-partners-logo.svg';
 
 import { Container } from './styles';
 
@@ -44,13 +44,13 @@ const Carousel: React.FC = () => {
           </p>
           <div className="logos">
             <div className="logo">
-              <img src={Wtr} alt="effect" />
+              <img src={waitrosePartnersImg} alt="Waitrose e Partners Logo" />
             </div>
             <div className="logo">
-              <img src={Tesco} alt="effect" />
+              <img src={tescoImg} alt="Tesco Logo" />
             </div>
             <div className="logo">
-              <img src={Ocado} alt="effect" />
+              <img src={ocadoImg} alt="Ocado Logo" />
             </div>
           </div>
         </div>

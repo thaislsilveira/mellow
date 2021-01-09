@@ -11,7 +11,7 @@ export const Container = styled.div`
     position: relative;
 
     .effect,
-    .landpage {
+    .pepper {
       display: inline-block;
     }
 
@@ -22,7 +22,7 @@ export const Container = styled.div`
       width: 250px;
     }
 
-    .landpage img {
+    .pepper img {
       width: 620px;
       margin-left: 90px;
       padding-right: 160px;

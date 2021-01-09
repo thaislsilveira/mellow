@@ -4,8 +4,8 @@ import Slick from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 
-import Green from '../../../assets/green.png';
-import Red from '../../../assets/red.jpg';
+import avocadoAndPeppersImg from '../../../assets/avocado-and-peppers.png';
+import watermelonPopsicleImg from '../../../assets/watermelon-popsicle.jpg';
 
 import { Container } from './styles';
 
@@ -16,7 +16,7 @@ const Carousel: React.FC = () => {
         <div>
           <div className="div-carousel">
             <div className="image-carousel">
-              <img src={Green} alt=" " />
+              <img src={avocadoAndPeppersImg} alt="Avocado and Peppers" />
             </div>
             <div className="text-carousel">
               <h1>How it works</h1>
@@ -39,7 +39,7 @@ const Carousel: React.FC = () => {
         <div>
           <div className="div-carousel">
             <div className="image-carousel">
-              <img src={Red} alt=" " />
+              <img src={watermelonPopsicleImg} alt="Watermelon Popsicle" />
             </div>
             <div className="text-carousel">
               <h1>How it works</h1>

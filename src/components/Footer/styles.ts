@@ -1,5 +1,17 @@
+import styled, { keyframes } from 'styled-components';
 import { shade } from 'polished';
-import styled from 'styled-components';
+
+const appearFromLeft = keyframes`
+from {
+  opacity: 0;
+  transform: translatex(-50px);
+} to{
+
+  opacity: 1;
+  transform: translatex(0);
+
+}
+`;
 
 export const Container = styled.div`
   background: #3b3b3b;
@@ -43,6 +55,8 @@ export const Container = styled.div`
     padding-bottom: 120px;
     padding-left: 190px;
     margin-top: 60px;
+
+    animation: ${appearFromLeft} 1s;
     h1 {
       font-size: 45px;
     }
