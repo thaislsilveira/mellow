@@ -1,5 +1,6 @@
 import React from 'react';
 
+import { Link as LinkSocial } from 'react-router-dom';
 import { Link, animateScroll as scroll } from 'react-scroll';
 
 import logoImg from '../../assets/Mellow_Logo.svg';
@@ -69,16 +70,24 @@ const Footer: React.FC = () => {
         </div>
         <div className="social-network">
           <div className="social">
-            <img src={facebook} alt="Facebook" />
+            <LinkSocial to="https://www.facebook.com/">
+              <img src={facebook} alt="Facebook" />
+            </LinkSocial>
           </div>
           <div className="social">
-            <img src={twitter} alt="Twitter" />
+            <LinkSocial to="https://twitter.com/">
+              <img src={twitter} alt="Twitter" />
+            </LinkSocial>
           </div>
           <div className="social">
-            <img src={instagram} alt="Instagram" />
+            <LinkSocial to="https://www.instagram.com/">
+              <img src={instagram} alt="Instagram" />
+            </LinkSocial>
           </div>
           <div className="social">
-            <img src={pinterest} alt="Pinterest" />
+            <LinkSocial to="https://pinterest.com/">
+              <img src={pinterest} alt="Pinterest" />
+            </LinkSocial>
           </div>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing</p>
         </div>

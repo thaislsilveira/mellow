@@ -16,8 +16,6 @@ export const HeaderContainer = styled.header`
   position: fixed;
   width: 100%;
   z-index: 2000;
-  -moz-transition: all 0.5s ease;
-  -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
   top: 0;
   background: #2bcfa2;
@@ -26,7 +24,7 @@ export const HeaderContainer = styled.header`
     display: flex;
     justify-content: space-between;
     align-items: center;
-    .menu-responsivo {
+    .menu-responsive {
       margin-right: 20px;
     }
   }
@@ -76,13 +74,14 @@ export const HeaderContainer = styled.header`
   }
 
   @media (max-width: 1100px) {
+    position: relative;
     nav {
       position: relative;
       flex-direction: column;
       > a {
         margin-right: auto;
       }
-      .menu-responsivo {
+      .menu-responsive {
         width: 100%;
         margin-right: 0;
         label {
@@ -174,7 +173,7 @@ export const HeaderContainer = styled.header`
   }
 
   @media (max-width: 590px) {
-    .menu-responsivo {
+    .menu-responsive {
       ul {
         flex-direction: column;
       }

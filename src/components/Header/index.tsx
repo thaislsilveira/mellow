@@ -18,7 +18,7 @@ const Header: React.FC = () => {
           <Link activeClass="active" to="nav" spy smooth duration={500}>
             <img src={logoImg} alt="Mellow" />
           </Link>
-          <div className="menu-responsivo">
+          <div className="menu-responsive">
             <input id="menu-checkbox" type="checkbox" />
             <label htmlFor="menu-checkbox">
               <span />

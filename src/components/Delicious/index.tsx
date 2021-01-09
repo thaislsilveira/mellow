@@ -1,5 +1,7 @@
 import React from 'react';
 
+import { Link } from 'react-router-dom';
+
 import L from 'leaflet';
 import { Map, TileLayer, Marker } from 'react-leaflet';
 
@@ -33,10 +35,14 @@ const Delicious: React.FC = () => {
           <p>Download on iOS and android for free</p>
           <div className="content-bottom-images">
             <div className="content-bottom-image">
-              <img src={appStore} alt="App Store" />
+              <Link to="https://www.apple.com/br/app-store/">
+                <img src={appStore} alt="App Store" />
+              </Link>
             </div>
             <div className="content-bottom-image">
-              <img src={google} alt="Google store" />
+              <Link to="https://play.google.com/store?hl=pt_BR&gl=US">
+                <img src={google} alt="Google store" />
+              </Link>
             </div>
           </div>
         </div>
