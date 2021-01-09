@@ -33,6 +33,7 @@ export const Container = styled.div`
       font: 600 18px Open Sans, sans-serif;
       color: #ffffff;
       text-decoration: none;
+      cursor: pointer;
     }
     .logo-item {
       padding-right: 190px;

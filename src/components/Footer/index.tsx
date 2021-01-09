@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Link } from 'react-router-dom';
+import { Link, animateScroll as scroll } from 'react-scroll';
 
 import logoImg from '../../assets/Mellow_Logo.svg';
 import facebook from '../../assets/facebook.svg';
@@ -17,13 +17,39 @@ const Footer: React.FC = () => {
         <nav>
           <ul className="menu">
             <li className="menu-item">
-              <Link to="/about">ABOUT US</Link>
+              <Link
+                activeClass="active"
+                to="go-green"
+                spy
+                smooth
+                offset={-90}
+                duration={500}
+              >
+                ABOUT US
+              </Link>
             </li>
             <li className="menu-item">
-              <Link to="/contact">CONTACT</Link>
+              <Link
+                activeClass="active"
+                to="princing"
+                spy
+                smooth
+                offset={-90}
+                duration={500}
+              >
+                CONTACT
+              </Link>
             </li>
             <li className="menu-item">
-              <Link to="/go-green">GO GREEN</Link>
+              <Link
+                activeClass="active"
+                to="go-green"
+                spy
+                smooth
+                duration={500}
+              >
+                GO GREEN
+              </Link>
             </li>
             <li className="menu-item">
               <Link to="/terms-e-conditions">TERMS & CONDITIONS</Link>
