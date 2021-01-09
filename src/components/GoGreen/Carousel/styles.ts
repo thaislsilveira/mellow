@@ -34,4 +34,15 @@ export const Container = styled.div`
       padding: 10px;
     }
   }
+
+  @media (max-width: 462px) {
+    .div-carousel {
+      .logos {
+        text-align: center;
+        .logo {
+          padding-bottom: 20px;
+        }
+      }
+    }
+  }
 `;

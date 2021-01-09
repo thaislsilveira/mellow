@@ -51,37 +51,37 @@ const Carousel: React.FC = () => {
         responsive={responsive}
       >
         <div className="div-carousel">
-          <Zoom>
+          <Zoom zoomMargin={200}>
             <img src={breadAndAvocadoImg} alt="Bread and Avocado" />
           </Zoom>
         </div>
         <div className="div-carousel">
-          <Zoom>
+          <Zoom zoomMargin={200}>
             <img src={pastaImg} alt="Pasta" />
           </Zoom>
         </div>
         <div className="div-carousel">
-          <Zoom>
+          <Zoom zoomMargin={200}>
             <img src={riceAndSaladImg} alt="Rice and Salad" />
           </Zoom>
         </div>
         <div className="div-carousel">
-          <Zoom>
+          <Zoom zoomMargin={200}>
             <img src={japaneseFoodImg} alt="Japanese Food" />
           </Zoom>
         </div>
         <div className="div-carousel">
-          <Zoom>
+          <Zoom zoomMargin={200}>
             <img src={riceAndSaladImg} alt="Rice and Salad" />
           </Zoom>
         </div>
         <div className="div-carousel">
-          <Zoom>
+          <Zoom zoomMargin={200}>
             <img src={pastaImg} alt="Pasta" />
           </Zoom>
         </div>
         <div className="div-carousel">
-          <Zoom>
+          <Zoom zoomMargin={200}>
             <img src={japaneseFoodImg} alt="Japanese Food" />
           </Zoom>
         </div>

@@ -33,7 +33,7 @@ const Header: React.FC = () => {
                   to="recipes"
                   spy
                   smooth
-                  offset={-90}
+                  offset={-100}
                   duration={500}
                 >
                   Recipes

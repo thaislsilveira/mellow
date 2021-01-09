@@ -36,8 +36,6 @@ export const HeaderContainer = styled.header`
     justify-content: start;
     align-items: center;
     display: flex;
-    /* margin-left: -14%;
-    position: absolute; */
     margin: 0 20px 0 0;
 
     right: 0;
@@ -218,14 +216,13 @@ export const Content = styled.div`
   .main-right {
     main h1 {
       font-size: 50px;
-      font-family: Open Sans, serif;
+      font-family: 'EksellDisplaySmall';
     }
 
     p {
       max-width: 750px;
       margin-top: 20px;
       font-size: 20px;
-      font-family: Open Sans, serif;
     }
 
     .main-cards {

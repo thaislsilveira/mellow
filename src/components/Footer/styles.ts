@@ -58,7 +58,7 @@ export const Container = styled.div`
 
     animation: ${appearFromLeft} 1s;
     h1 {
-      font-size: 45px;
+      font: 600 45px Open Sans, sans-serif;
     }
     .color-green {
       color: #00ea87;
