@@ -47,6 +47,7 @@ const Header: React.FC = () => {
                   to="go-green"
                   spy
                   smooth
+                  offset={-100}
                   duration={500}
                 >
                   Go Green
@@ -58,7 +59,7 @@ const Header: React.FC = () => {
                   to="princing"
                   spy
                   smooth
-                  offset={-90}
+                  offset={-100}
                   duration={500}
                 >
                   Princing
