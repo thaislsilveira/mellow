@@ -4,8 +4,12 @@ import { shade } from 'polished';
 export const Container = styled.div`
   width: 100%;
   position: relative;
-  margin-bottom: 3rem;
   background: #2bcfa2;
+
+  .top {
+    height: 100px;
+    width: 100%;
+  }
 
   @media (max-width: 1358px) {
     padding-bottom: 60px;
@@ -210,6 +214,7 @@ export const Content = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
+  padding-bottom: 150px;
 
   .image-left,
   .main-right {

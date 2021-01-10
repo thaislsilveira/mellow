@@ -16,6 +16,7 @@ const Header: React.FC = () => {
 
   return (
     <Container>
+      <div id="top" className="top" />
       <HeaderContainer>
         <nav>
           <Link
@@ -42,7 +43,6 @@ const Header: React.FC = () => {
                   to="recipes"
                   spy
                   smooth
-                  offset={-100}
                   duration={500}
                 >
                   Recipes
@@ -54,7 +54,6 @@ const Header: React.FC = () => {
                   to="go-green"
                   spy
                   smooth
-                  offset={-100}
                   duration={500}
                 >
                   Go Green
@@ -66,7 +65,6 @@ const Header: React.FC = () => {
                   to="princing"
                   spy
                   smooth
-                  offset={50}
                   duration={500}
                 >
                   Princing
@@ -90,7 +88,6 @@ const Header: React.FC = () => {
           </div>
         </nav>
       </HeaderContainer>
-      <div id="top" />
       <Content id="princing">
         <div className="image-left">
           <img src={foodsImg} alt="foods" />
