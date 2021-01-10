@@ -45,3 +45,15 @@ npm start
     <li><a href="https://reactjs.org/" target="_blank">React</a></li>
     <li><a href="https://www.typescriptlang.org/" target="_blank">TypeScript</a></li>  
 </ul>
+
+## Web :computer:
+
+![Web-scroll](https://github.com/thaislsilveira/mellow/blob/main/src/assets/web-scroll.gif)
+![Web-button](https://github.com/thaislsilveira/mellow/blob/main/src/assets/web-button.gif)
+
+
+## Layout Responsivo :iphone:
+
+iPad            |  Smartphone
+:-------------------------:|:-------------------------:
+![iPad](https://github.com/thaislsilveira/mellow/blob/main/src/assets/iPad.gif)  |  ![Smartphone](https://github.com/thaislsilveira/mellow/blob/main/src/assets/smartphone.gif)
