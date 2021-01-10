@@ -1,4 +1,4 @@
-# Projeto Mellow em Produção :construction:
+<h1 align='center'>Mellow</h1>
 
 ## Descrição do projeto :star:
 
