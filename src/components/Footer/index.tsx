@@ -1,7 +1,6 @@
 import React from 'react';
 
-import { Link as LinkSocial } from 'react-router-dom';
-import { Link, animateScroll as scroll } from 'react-scroll';
+import { Link } from 'react-scroll';
 
 import logoImg from '../../assets/mellow-logo.svg';
 import facebookImg from '../../assets/icon-facebook.svg';
@@ -95,9 +94,13 @@ const Footer: React.FC = () => {
           {arraySocial.map(item => {
             return (
               <div className="social">
-                <LinkSocial to={`${item.link}`}>
+                <a
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  href={`${item.link}`}
+                >
                   <img src={`${item.img}`} alt={`${item.alt}`} />
-                </LinkSocial>
+                </a>
               </div>
             );
           })}

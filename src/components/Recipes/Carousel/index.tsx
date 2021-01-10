@@ -55,15 +55,17 @@ const Carousel: React.FC = () => {
                     />
                   </div>
                   <div className="div-carousel-text">
-                    <h1>Recipe Name Goes Here</h1>
-                    <p>
-                      Culpa qui officia deserunt mollit anim id est laborum. Sed
-                      ut perspiciatis unde omnis iste natus error sit
-                      voluptartem accusantium doloremque laudantium
-                    </p>
-                    <button type="button" className="div-carouse-button">
-                      GO TO RECIPE
-                    </button>
+                    <div className="inner-block">
+                      <h1>Recipe Name Goes Here</h1>
+                      <p>
+                        Culpa qui officia deserunt mollit anim id est laborum.
+                        Sed ut perspiciatis unde omnis iste natus error sit
+                        voluptartem accusantium doloremque laudantium
+                      </p>
+                      <button type="button" className="div-carouse-button">
+                        GO TO RECIPE
+                      </button>
+                    </div>
                   </div>
                 </div>
               </div>

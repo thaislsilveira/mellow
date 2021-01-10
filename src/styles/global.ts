@@ -32,6 +32,14 @@ export default createGlobalStyle`
   outline: 0;
 }
 
+html::-webkit-scrollbar, body::-webkit-scrollbar {
+	width: 10px;
+}
+
+html::-webkit-scrollbar-thumb, body::-webkit-scrollbar-thumb {
+	background-color: #00ea87;
+}
+
 body {
   color: #fff;
   -webkit-font-smoothing: antialiased;

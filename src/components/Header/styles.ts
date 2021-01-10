@@ -25,6 +25,10 @@ export const HeaderContainer = styled.header`
     justify-content: space-between;
     align-items: center;
 
+    .logo {
+      cursor: pointer;
+    }
+
     .menu-responsive {
       margin-right: 20px;
     }
@@ -48,6 +52,10 @@ export const HeaderContainer = styled.header`
   li {
     margin-left: 32px;
     list-style-type: none;
+
+    .active {
+      color: #8b8a92;
+    }
   }
 
   li a {
@@ -238,7 +246,7 @@ export const Content = styled.div`
       border-radius: 10px;
       opacity: 1;
       display: inline-block;
-      margin-right: 10px;
+      margin-right: 40px;
     }
 
     .card h2 {
@@ -302,7 +310,7 @@ export const Content = styled.div`
       }
     }
   }
-  @media (max-width: 1358px) {
+  @media (max-width: 1454px) {
     .image-left {
       display: none;
     }
@@ -319,7 +327,7 @@ export const Content = styled.div`
     }
   }
 
-  @media (max-width: 859px) {
+  @media (max-width: 950px) {
     .main-right {
       .main-cards {
         .card {

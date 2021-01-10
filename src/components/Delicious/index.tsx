@@ -1,7 +1,5 @@
 import React from 'react';
 
-import { Link } from 'react-router-dom';
-
 import L from 'leaflet';
 import { Map, TileLayer, Marker } from 'react-leaflet';
 
@@ -31,7 +29,7 @@ const Delicious: React.FC = () => {
     className: 'div-cion',
   });
   return (
-    <Container id="princing">
+    <Container>
       <div className="content-left">
         <div className="content-top">
           <h1>Delicious</h1>
@@ -50,9 +48,13 @@ const Delicious: React.FC = () => {
             {arrayInformation.map(item => {
               return (
                 <div className="content-bottom-image">
-                  <Link to={`${item.link}`}>
+                  <a
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    href={`${item.link}`}
+                  >
                     <img src={`${item.img}`} alt={`${item.alt}`} />
-                  </Link>
+                  </a>
                 </div>
               );
             })}

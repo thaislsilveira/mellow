@@ -48,6 +48,10 @@ export const Container = styled.div`
         .div-carousel-text {
           width: 0px;
           transition: width 0.35s ease-in-out;
+          .inner-block {
+            width: 400px;
+            overflow: hidden;
+          }
           h1 {
             font-family: 'EksellDisplaySmall';
             color: #8b8a92;

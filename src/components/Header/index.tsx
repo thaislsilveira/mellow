@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Link, animateScroll as scroll } from 'react-scroll';
+import { Link } from 'react-scroll';
 
 import { Container, HeaderContainer, Content } from './styles';
 
@@ -15,10 +15,17 @@ const Header: React.FC = () => {
   const arrayImage = [panImg, avocadoImg, bowlImg];
 
   return (
-    <Container id="nav">
+    <Container>
       <HeaderContainer>
         <nav>
-          <Link activeClass="active" to="nav" spy smooth duration={500}>
+          <Link
+            className="logo"
+            activeClass="active"
+            to="top"
+            spy
+            smooth
+            duration={500}
+          >
             <img src={logoImg} alt="Mellow" />
           </Link>
           <div className="menu-responsive">
@@ -59,7 +66,7 @@ const Header: React.FC = () => {
                   to="princing"
                   spy
                   smooth
-                  offset={-100}
+                  offset={50}
                   duration={500}
                 >
                   Princing
@@ -83,7 +90,8 @@ const Header: React.FC = () => {
           </div>
         </nav>
       </HeaderContainer>
-      <Content>
+      <div id="top" />
+      <Content id="princing">
         <div className="image-left">
           <img src={foodsImg} alt="foods" />
         </div>
