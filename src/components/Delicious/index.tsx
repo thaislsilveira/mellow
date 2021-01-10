@@ -47,7 +47,7 @@ const Delicious: React.FC = () => {
           <div className="content-bottom-images">
             {arrayInformation.map(item => {
               return (
-                <div className="content-bottom-image">
+                <div key={item.alt} className="content-bottom-image">
                   <a
                     target="_blank"
                     rel="noopener noreferrer"

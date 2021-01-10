@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 
 import Slick from 'react-slick';
 
@@ -45,7 +45,7 @@ const Carousel: React.FC = () => {
       >
         {arrayImage.map(image => {
           return (
-            <div className="div-carousel-block">
+            <div key={image} className="div-carousel-block">
               <div className="div-carousel">
                 <div className="div-carousel-inner">
                   <div className="div-carousel-image">

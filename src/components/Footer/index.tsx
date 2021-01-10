@@ -93,7 +93,7 @@ const Footer: React.FC = () => {
         <div className="social-network">
           {arraySocial.map(item => {
             return (
-              <div className="social">
+              <div key={item.alt} className="social">
                 <a
                   target="_blank"
                   rel="noopener noreferrer"

@@ -27,7 +27,7 @@ const GoGreen: React.FC = () => {
         <div className="images">
           {arrayInformation.map(item => {
             return (
-              <div className={`${item.class}`}>
+              <div key={item.class} className={`${item.class}`}>
                 <img src={`${item.img}`} alt={`${item.alt}`} />
               </div>
             );

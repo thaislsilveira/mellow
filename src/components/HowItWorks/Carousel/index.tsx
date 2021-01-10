@@ -26,7 +26,7 @@ const Carousel: React.FC = () => {
       <Slick fade autoplay infinite centerMode arrows={false} slidesToShow={1}>
         {arrayInformation.map(item => {
           return (
-            <div>
+            <div key={item.alt}>
               <div className="div-carousel">
                 <div className="image-carousel">
                   <img src={`${item.img}`} alt={`${item.alt}`} />
