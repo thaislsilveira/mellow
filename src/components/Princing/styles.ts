@@ -121,14 +121,21 @@ export const Container = styled.div`
     .image-left {
       display: none;
     }
-  }
-
-  @media (max-width: 1100px) {
+    padding-top: 20px;
     .main-right {
+      .main-cards {
+        .card {
+          margin: 0 20px;
+        }
+      }
       main {
         h1,
-        .main-p p {
+        .main-p {
           text-align: center;
+          p {
+            margin-left: auto;
+            margin-right: auto;
+          }
         }
       }
     }

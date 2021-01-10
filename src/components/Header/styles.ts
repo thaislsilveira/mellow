@@ -10,8 +10,7 @@ export const Container = styled.div`
     width: 100%;
   }
 
-  @media (max-width: 1358px) {
-    padding-bottom: 60px;
+  @media (max-width: 1100px) {
     .top {
       height: 10px;
     }

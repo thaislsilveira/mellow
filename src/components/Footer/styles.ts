@@ -52,7 +52,7 @@ export const Container = styled.div`
     }
   }
   .footer-content {
-    padding-bottom: 120px;
+    padding-bottom: 80px;
     padding-left: 190px;
     margin-top: 60px;
 
