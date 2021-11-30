@@ -13,13 +13,13 @@ Em caso de download do projeto você precisará baixar as dependências :warning
 
 ### Executando o projeto com **Yarn**:
 
--Execute o comandos abaixo, para baixar as dependências:
+- Execute o comandos abaixo, para baixar as dependências:
 
 ```
 yarn
 ``` 
 
--Para iniciar o projeto, basta executar o comando abaixo:
+- Para iniciar o projeto, basta executar o comando abaixo:
 
 ```
 yarn start 
@@ -27,13 +27,13 @@ yarn start
 
 ### Executando o projeto com **NPM**:
 
--Execute o comandos abaixo, para baixar as dependências:
+- Execute o comandos abaixo, para baixar as dependências:
 
 ```
 npm install
 ``` 
 
--Para iniciar o projeto, basta executar o comando abaixo:
+- Para iniciar o projeto, basta executar o comando abaixo:
 
 ```
 npm start
